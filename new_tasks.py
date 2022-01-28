@@ -133,14 +133,35 @@
 # def rasstoyanie (D, A, B):
 #     distance = 0;
 #     if (D == 2):
-#         distance = math.Sqrt(math.Pow((B[0] - A[0]), 2) + math.Pow((B[1] - A[1]), 2));
+#         distance = math.sqrt(math.pow((B[0] - A[0]), 2) + math.pow((B[1] - A[1]), 2));
 #     if (D == 3):
-#         distance = math.Sqrt(math.Pow((B[0] - A[0]), 2) + math.Pow((B[1] - A[1]), 2) + math.Pow((B[2] - A[2]), 2));
+#         distance = math.sqrt(math.pow((B[0] - A[0]), 2) + math.pow((B[1] - A[1]), 2) + math.pow((B[2] - A[2]), 2));
 #     return distance;
 
 # A = {1, 6, 9};
 # B = {8, 2, 0};
 # print(rasstoyanie(2, A, B));
+
+
+# from random import randint
+# import math
+
+# def coordinat (ose, left, right):
+#     return [randint (left, right) for i in range (ose)]
+
+# def rasstoyanie (a, b):
+#     return round (math.sqrt (sum((x-y)**2 for x,y in zip(a,b))), 3)
+
+# # колтчество осей координат
+# ose = 3    
+# left = -10
+# right = 10
+
+# A = coordinat (ose, left, right)
+# B = coordinat (ose, left, right)
+
+# print (f'A {A}, B {B}')
+# print (f'Расстояние: {rasstoyanie(A, B)}')
 
 # Семинар 3-4: примерный список задач
 # 11.Для натурального N создать множество: 1, -3, 9, -27, 81 и т.д.
