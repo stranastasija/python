@@ -2,6 +2,9 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 import datetime
 
+def start_command(update: Update, context: CallbackContext):
+    update.message.reply_text(f'/hi - приветствие\n/time - время\n/sum - сумма двух чисел, введенных через пробел\n/dif - разность двух чисел, введенных через пробел\n/motive - небольшая мотивация для тебя\n/love - признание для тебя\n/bye - попрощаемся?\n/help - список всех команд')
+
 def hi_command(update: Update, context: CallbackContext):
     update.message.reply_text(f'Hi {update.effective_user.first_name} !')
 
